@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asiya Weather - Sri Lanka & India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-umbrella"></> Asiya Weather</h1>
+            <p class="tagline">Weather forecasts for Sri Lanka and India</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter city (e.g. Colombo, Mumbai)">
+            <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            <button id="current-location-btn"><i class="fas fa-location-arrow"></i> Current Location</button>
+        </div>
+
+        <div class="weather-display">
+            <div class="current-weather">
+                <div class="location-info">
+                    <h2 id="city-name">Colombo</h2>
+                    <p id="current-date">Wednesday, June 5, 2024</p>
+                </div>
+                <div class="weather-main">
+                    <div class="temperature">
+                        <span id="current-temp">28</span><span class="unit">°C</span>
+                    </div>
+                    <div class="weather-icon">
+                        <i class="fas fa-sun"></i>
+                        <p id="weather-description">Sunny</p>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidity">65%</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <span id="wind-speed">12 km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-cloud"></i>
+                        <span id="cloud-cover">20%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div class="forecast-items">
+                    <!-- Forecast items will be added by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 Asiya Weather | Data provided by OpenWeatherMap</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
